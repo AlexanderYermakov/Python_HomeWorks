@@ -25,8 +25,26 @@
 
 def sum(a, b):
     if b == 0:
-        return 1  
-    return a + sum(a, b - 1)
+        return a
+    elif a == 0:
+        return b
+    else:
+        return sum(a + 1, b - 1)
 
-res = sum(2, 2)
-print(res)
+result = sum(2, 5)
+print(result)
+    
+
+
+
+
+
+
+# def sum(a, b):
+#     if b == 0:
+#         return 1  
+#     return a + sum(a, b - 1)
+
+
+# result = sum(2, 9)
+# print(result)
