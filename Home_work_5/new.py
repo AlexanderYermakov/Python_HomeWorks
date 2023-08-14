@@ -6,7 +6,14 @@
 # b = 5
 # print(f(a, b))
 
+#               2  3  -> 2 * 2 * 2
+# def f(a, b):
+#     if b == 1:
+#         return a    
+#     return a * f(a, b - 1)
 
+# exp = f(3, 2)
+# print(exp)
 #task 2
 
 # Напишите рекурсивную функцию sum(a, b), возвращающую сумму двух целых неотрицательных чисел. 
@@ -15,3 +22,11 @@
 # a = 3
 # b = 5
 # print(sum(a, b))
+
+def sum(a, b):
+    if b == 0:
+        return 1  
+    return a + sum(a, b - 1)
+
+res = sum(2, 2)
+print(res)
